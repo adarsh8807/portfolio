@@ -1,0 +1,44 @@
+.skills-section {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+}
+
+/* Gradient Title */
+.gradient-text {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glass Card */
+.skill-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* Hover Animation */
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 198, 255, 0.6);
+}
+
+/* Skill Icon */
+.skill-icon {
+  width: 70px;
+  transition: 0.4s ease;
+}
+
+.skill-card:hover .skill-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Progress bar styling */
+.MuiLinearProgress-root {
+  height: 8px !important;
+  border-radius: 5px;
+}

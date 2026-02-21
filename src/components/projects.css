@@ -1,0 +1,48 @@
+.projects-section {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+}
+
+/* Card */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+/* Image */
+.project-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.4s ease;
+  border-radius: 20px;
+}
+
+/* Zoom Effect */
+.project-card:hover .project-img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.4s ease;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}

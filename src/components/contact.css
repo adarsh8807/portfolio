@@ -1,0 +1,62 @@
+/* Section with animated gradient water effect */
+.contact-section {
+  position: relative;
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1e3c72);
+  background-size: 400% 400%;
+  animation: waterAnimation 12s ease infinite;
+  color: white;
+  overflow: hidden;
+}
+
+/* Animated gradient movement */
+@keyframes waterAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glass Card */
+.contact-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.4s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 0 25px rgba(0, 198, 255, 0.6);
+  transform: translateY(-5px);
+}
+
+/* Typing animation text */
+.typing-text {
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #00c6ff;
+  animation: typing 4s steps(30, end), blink 0.7s infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Cursor blink */
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* Social Icons */
+.social-links a {
+  margin-right: 20px;
+  color: #00c6ff;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  color: white;
+  transform: scale(1.3);
+}
